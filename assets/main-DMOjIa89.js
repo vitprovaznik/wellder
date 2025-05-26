@@ -1,10 +1,10 @@
-/* empty css              */import{s as t}from"./counter-CiXuyEs-.js";const o="/javascript.svg",e="/vite.svg";document.querySelector("#app").innerHTML=`
+/* empty css              */import{s as t}from"./counter-CiXuyEs-.js";const e="/wellder/javascript.svg",o="/wellder/vite.svg";document.querySelector("#app").innerHTML=`
   <div>
     <a href="https://vite.dev" target="_blank">
-      <img src="${e}" class="logo" alt="Vite logo" />
+      <img src="${o}" class="logo" alt="Vite logo" />
     </a>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${o}" class="logo vanilla" alt="JavaScript logo" />
+      <img src="${e}" class="logo vanilla" alt="JavaScript logo" />
     </a>
     <h1>Hello Vite!</h1>
     <div class="card">
@@ -14,4 +14,4 @@
       Click on the Vite logo to learn more
     </p>
   </div>
-`;t(document.querySelector("#counter"));
+`;console.log("Ahoj světe!");t(document.querySelector("#counter"));
