@@ -2,3 +2,15 @@ h3 {
   font-size: 2.5rem;
   font-weight: 600;
 }
+.article__heading{
+    font-size: 1.25rem;
+}
+.article__heading--orange{
+    color: var(--orange, #e97818);
+}
+.article__heading--medium{
+    font-weight: 600;
+}
+.article__heading--bold{
+    font-weight: 700;
+}
