@@ -1,4 +1,4 @@
-@layer reset, init, components, content, animations, hamburger;
+@layer reset, init, typography, components, content, animations, hamburger;
 
 @import url(normalize.css) layer(reset);
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap")
@@ -6,12 +6,14 @@ layer(reset);
 
 @import url(style.css) layer(content);
 
-@import url(animations.css) layer(animations);
 @import url(components.css) layer(components);
+@import url(typography.css) layer(typography);
+@import url(animations.css) layer(animations);
 @import url(hamburger.css) layer(hamburger);
 
 @layer reset {
   :root {
+    /* Barvy: */
     --orange: #e97818;
     --white: #ffffff;
     --gray: #bcbcbc;
@@ -28,21 +30,14 @@ layer(reset);
       hsl(344deg 0% 11%) 81%,
       hsl(0deg 0% 10%) 100%
     );
+
+    /* Mezery */
+    --section--padding: 2.5rem 2.25rem 4rem 2.25rem;
+    --gap-large: 2rem;
+    --gap-medium: 1.55rem;
+    --gap-small: 0.75rem;
   }
-  *,
-  *::before,
-  *::after,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
   html {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -51,6 +46,13 @@ layer(reset);
     overscroll-behavior: none;
     overflow-x: hidden;
     overflow-y: scroll;
+  }
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   body {
     background: linear-gradient(
