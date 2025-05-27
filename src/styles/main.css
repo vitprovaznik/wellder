@@ -32,10 +32,23 @@ layer(reset);
     );
 
     /* Mezery */
-    --section--padding: 2.5rem 2.25rem 4rem 2.25rem;
+    --section-padding: 2.5rem 2.25rem 4rem 2.25rem;
+    --section-maxwidth: 1280px;
     --gap-large: 2rem;
     --gap-medium: 1.55rem;
     --gap-small: 0.75rem;
+    --gap-xsmall: 0.5rem;
+
+    /* Typografie */
+    --font-size--large: 2.5rem;
+    --font-size--medium: 1.25rem;
+    --font-size--normal: 1rem;
+    --font-size--small: 0.75rem;
+    --font-weight--bold: 700;
+    --font-weight--medium: 600;
+    --font-weight--normal: 400;
+    --font-weight--light: 300;
+    --radius: 12px;
   }
 
   html {
@@ -53,6 +66,16 @@ layer(reset);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
   }
   body {
     background: linear-gradient(
@@ -82,4 +105,16 @@ layer(reset);
     width: 100%;
     height: auto;
   }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
 }

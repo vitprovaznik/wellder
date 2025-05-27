@@ -1,16 +1,19 @@
-h3 {
-  font-size: 2.5rem;
-  font-weight: 600;
+.section__heading{
+  font-size: var(--font-size--large, 2.5rem);
+  font-weight: var(--font-weight--medium, 600);
 }
 .article__heading{
-    font-size: 1.25rem;
+    font-size: var(--font-size-medium, 1.25rem);
 }
-.article__heading--orange{
+.text--gray{
+    color: var(--gray, #bcbcbc);
+}
+.text--orange{
     color: var(--orange, #e97818);
 }
-.article__heading--medium{
+.text--medium{
     font-weight: 600;
 }
-.article__heading--bold{
+.text--bold{
     font-weight: 700;
 }
