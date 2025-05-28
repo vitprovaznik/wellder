@@ -1,19 +1,29 @@
-.section__heading{
+.section__heading {
   font-size: var(--font-size--large, 2.5rem);
   font-weight: var(--font-weight--medium, 600);
 }
-.article__heading{
-    font-size: var(--font-size-medium, 1.25rem);
+.article__heading {
+  font-size: var(--font-size--medium, 1.25rem);
 }
-.text--gray{
-    color: var(--gray, #bcbcbc);
+.hamburger-menu__items {
+  font-size: var(--font-size--xmedium, 2rem);
+  text-decoration: none;
 }
-.text--orange{
-    color: var(--orange, #e97818);
+.text--gray {
+  color: var(--gray, #bcbcbc);
 }
-.text--medium{
-    font-weight: 600;
+.text--orange {
+  color: var(--orange, #e97818);
 }
-.text--bold{
-    font-weight: 700;
+.text--black {
+  color: var(--black, #000);
+}
+.text--medium {
+  font-weight: var(--font-weight--medium, 600);
+}
+.text--semibold {
+  font-weight: var(--font-weight--semibold, 500);
+}
+.text--bold {
+  font-weight: var(--font-weight-bold, 700);
 }
