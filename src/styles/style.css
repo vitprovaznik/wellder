@@ -1,3 +1,4 @@
+/* Hero */
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -13,7 +14,6 @@
 .hero__text {
   max-width: 270px;
 }
-
 .hero__grid {
   display: grid;
   min-height: 400px;
@@ -35,4 +35,28 @@
 .hero__grid picture:nth-child(2) {
   grid-column: 5 / 10;
   grid-row: 3 / 10;
+}
+
+/* About */
+
+.background--about {
+  background: linear-gradient(
+      135deg,
+      hsla(0, 0%, 23%, 0.98) 0%,
+      hsla(344, 0%, 22%, 0.96) 14%,
+      hsla(344, 0%, 20%, 0.94) 24%,
+      hsla(344, 0%, 19%, 0.92) 31%,
+      hsla(344, 0%, 17%, 0.9) 38%,
+      hsla(344, 0%, 16%, 0.88) 46%,
+      hsla(344, 0%, 14%, 0.86) 55%,
+      hsla(344, 0%, 13%, 0.84) 66%,
+      hsla(344, 0%, 11%, 0.82) 81%,
+      hsla(0, 0%, 10%, 0.8) 100%
+    ),
+    url("/images/main/about-background.webp"),
+    url("/images/back/about-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 1px solid #fff;
 }
