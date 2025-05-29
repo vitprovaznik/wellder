@@ -9,6 +9,10 @@
   font-size: var(--font-size--xmedium, 2rem);
   text-decoration: none;
 }
+.why-us__heading {
+  font-size: var(--font-size--xmedium, 2rem);
+  font-weight: var(--font-weight--medium, 600);
+}
 .text--gray {
   color: var(--gray, #bcbcbc);
 }

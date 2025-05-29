@@ -2,12 +2,14 @@
 
 @import url(normalize.css) layer(reset);
 @import url(/node_modules/accordion-js/dist/accordion.min.css) layer(reset);
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap")
-layer(reset);
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap")
+layer(reset); */
 
 @import url(style.css) layer(content);
 
 @import url(components.css) layer(components);
+@import url(accordion.css) layer(components);
+
 @import url(typography.css) layer(typography);
 @import url(animations.css) layer(animations);
 @import url(hamburger.css) layer(hamburger);
@@ -36,13 +38,17 @@ layer(reset);
     /* Mezery */
     --section-padding: 2.5rem 2.25rem 4rem 2.25rem;
     --section-maxwidth: 1280px;
+    --gap-xxlarge: 4rem;
+    --gap-xlarge: 3rem;
     --gap-large: 2rem;
     --gap-medium: 1.55rem;
+    --gap-normal: 1rem;
     --gap-small: 0.75rem;
     --gap-xsmall: 0.5rem;
 
     /* Typografie */
     --font-size--large: 2.5rem;
+    --font-size--xxmedium: 2.25rem;
     --font-size--xmedium: 2rem;
     --font-size--medium: 1.25rem;
     --font-size--normal: 1rem;

@@ -1,0 +1,45 @@
+.accordion-container {
+  padding-block: var(--gap-xxlarge, 3rem);
+}
+.ac {
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0;
+}
+.ac--last {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.ac-trigger {
+  color: rgba(255, 255, 255, 0.64);
+  padding: var(--gap-normal, 1rem);
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xsmall, 0.5rem);
+}
+.ac-title {
+  font-size: var(--font-size--medium, 1.25rem);
+  font-weight: var(--font-wight--normal, 400);
+  color: rgba(255, 255, 255, 0.64);
+}
+.ac-text {
+  font-size: var(--font-size--small, 0.75rem);
+  font-weight: var(--font-wight--normal, 400);
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.5;
+}
+.is-active .ac-title {
+  color: white;
+}
+.is-active .ac__icon {
+  fill: #e97818;
+  fill-opacity: 1;
+}
+.ac__icon--map {
+  stroke: var(--white, #ffffff);
+  stroke-opacity: 0.64;
+}
+.is-active .ac__icon--map {
+  stroke: var(--primary, #e97818);
+  stroke-opacity: 1;
+}

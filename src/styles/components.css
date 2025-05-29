@@ -70,3 +70,11 @@
     hsl(0deg 0% 10%) 100%
   );
 }
+
+.image{
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius, 12px);
+  object-fit: cover;
+  object-position: center;
+}

@@ -4,7 +4,7 @@ new Accordion(".accordion-container");
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerButton = document.querySelector(`.hamburger-btn`);
   const hamburgerNav = document.querySelector(".hamburger-nav");
-  const overlay = document.querySelector(".overlay");
+  const overlay = document.querySelector(".navbar__overlay");
   const body = document.querySelector("html");
   const menuItems = document.querySelectorAll(".hamburger-nav li");
   const menuIcons = document.querySelectorAll(
