@@ -160,3 +160,113 @@
   border-radius: 100px;
   top: -1px;
 }
+
+/* Technologies */
+.background--technologies {
+  background: none;
+  background-color: #3a3939;
+  margin-top: -170px;
+}
+.technologies {
+  padding-top: 150px;
+}
+.technologies__card-wrapper {
+  margin-top: var(--gap-slarge, 2.25rem);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-medium, 1.55rem);
+}
+.technologies__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xsmall, 0.5rem);
+  padding: var(--tech-card-padding, 1.06rem 1.31rem);
+  border-radius: var(--radius, 12px);
+  flex-grow: 1;
+  background: #525252;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.28);
+}
+.technologies__card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xsmall, 0.5rem);
+}
+.technologies__card-text {
+  opacity: 0.85;
+}
+
+/* Projects */
+.projects {
+  border-top: 1px solid #fff;
+}
+.projects__card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-medium, 1.55rem);
+  margin-top: var(--gap-slarge, 2.25rem);
+}
+.projects__card-link {
+  text-decoration: none;
+  color: var(--white, #fff);
+}
+.projects__card {
+  display: flex;
+  flex-grow: 1;
+  height: 465px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12.5px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background-color: rgb(120, 120, 120);
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.28);
+
+  background-position: center; /* Center the image */
+  background-size: cover; /* Maintain aspect ratio and show more of the image */
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+
+  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+.projects__card:hover {
+  transform: scale(1.05);
+  background-color: rgb(132, 132, 132);
+}
+#pc-1 {
+  background-image: url("/images/main/strojeZarizeni.webp"),
+    url("/images/back/strojeZarizeni.jpg");
+}
+#pc-2 {
+  background-image: url("/images/main/hero-schody.webp"),
+    url("/images/back/hero-schody.jpg");
+}
+#pc-3 {
+  background-image: url("/images/main/plot.webp"), url("/images/back/plot.jpg");
+}
+#pc-4 {
+  background-image: url("/images/main/pergola.webp"),
+    url("/images/back/pergola.jpg");
+}
+.projects__card-title {
+  font-size: var(--font-size--medium, 1.25rem);
+  font-weight: var(--font-weight--xbold, 800);
+  color: var(--orange, #e97818);
+}
+.projects__card-title::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 14px;
+  margin-left: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M10.4474 11.9986C10.999 12.0276 11.4696 11.6041 11.4986 11.0526L11.9716 2.065C12.0007 1.51348 11.5771 1.04285 11.0256 1.01382C10.4741 0.984794 10.0034 1.40836 9.97441 1.95988L9.55394 9.94882L1.565 9.52835C1.01348 9.49932 0.542849 9.92289 0.513822 10.4744C0.484794 11.0259 0.908359 11.4966 1.45988 11.5256L10.4474 11.9986ZM0.756706 1.66896L9.75671 11.669L11.2433 10.331L2.24329 0.331035L0.756706 1.66896Z' fill='%23F57F51'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.projects__card-text {
+  text-align: center;
+  /* margin-bottom: 50px;
+  padding-inline: 10px; */
+  padding: 0 10px 50px 10px;
+}

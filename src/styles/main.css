@@ -37,9 +37,11 @@ layer(reset); */
 
     /* Mezery */
     --section-padding: 2.5rem 2.25rem 4rem 2.25rem;
+    --tech-card-padding: 1.06rem 1.31rem;
     --section-maxwidth: 1280px;
     --gap-xxlarge: 4rem;
     --gap-xlarge: 3rem;
+    --gap-slarge: 2.25rem;
     --gap-large: 2rem;
     --gap-medium: 1.55rem;
     --gap-normal: 1rem;
@@ -53,6 +55,7 @@ layer(reset); */
     --font-size--medium: 1.25rem;
     --font-size--normal: 1rem;
     --font-size--small: 0.75rem;
+    --font-weight--xbold: 800;
     --font-weight--bold: 700;
     --font-weight--medium: 600;
     --font-weight--semibold: 500;
