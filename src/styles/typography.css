@@ -2,6 +2,9 @@
   font-size: var(--font-size--large, 2.5rem);
   font-weight: var(--font-weight--medium, 600);
 }
+.section__subheading {
+  font-size: var(--font-size--mediumx, 1.5rem);
+}
 .article__heading {
   font-size: var(--font-size--medium, 1.25rem);
 }
@@ -21,6 +24,12 @@
 }
 .text--black {
   color: var(--black, #000);
+}
+.text--white {
+  color: var(--white, #fff);
+}
+.text--underline {
+  text-decoration: underline;
 }
 .text--medium {
   font-weight: var(--font-weight--medium, 600);

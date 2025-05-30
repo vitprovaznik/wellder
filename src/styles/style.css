@@ -270,3 +270,32 @@
   padding-inline: 10px; */
   padding: 0 10px 50px 10px;
 }
+
+/* Contact */
+.contact__card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-large, 2rem);
+    margin-top: var(--gap-slarge, 2.25rem);
+}
+.contact__card{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small, 0.75rem);
+    padding: var(--gap-normal, 1rem) var(--gap-small, 0.75rem);
+    border-radius: var(--radius, 12px);
+    background-color: #454545;;
+}
+.contact__card-info{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xsmall, 0.5rem);
+}
+.contact__heading{
+    margin-bottom: var(--gap-normal, 1rem);
+}
+.contact__card-icon-container{
+    display: flex;
+    align-items: center;
+    gap: var(--gap-xsmall, 0.5rem);
+}
