@@ -44,3 +44,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+const dropzone = document.getElementById('dropzone');
+  const fileInput = document.getElementById('fileInput');
+  const filename = document.getElementById('filename');
+
+  dropzone.addEventListener('click', () => fileInput.click());
+
+  dropzone.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropzone.classList.add('contact-form__dropzone--active');
+  });
+
+  dropzone.addEventListener('dragleave', () => {
+    dropzone.classList.remove('contact-form__dropzone--active');
+  });
+
+  dropzone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropzone.classList.remove('contact-form__dropzone--active');
+    fileInput.files = e.dataTransfer.files;
+    filename.textContent = fileInput.files[0]?.name || '';
+  });
+
+  fileInput.addEventListener('change', () => {
+    filename.textContent = fileInput.files[0]?.name || '';
+  });
+
+  // Optional: show file name on submit and prevent empty file
+  document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    // Example: prevent submit if file is required and not selected
+    // if (fileInput.files.length === 0) {
+    //   e.preventDefault();
+    //   alert('Přiložte soubor.');
+    // }
+  });

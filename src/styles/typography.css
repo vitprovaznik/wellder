@@ -31,6 +31,9 @@
 .text--underline {
   text-decoration: underline;
 }
+.text--llight{
+  font-weight: var();
+}
 .text--medium {
   font-weight: var(--font-weight--medium, 600);
 }

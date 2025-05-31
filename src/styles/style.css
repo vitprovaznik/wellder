@@ -125,7 +125,7 @@
   gap: var(--gap-large, 2rem);
   align-content: center;
   max-width: 400px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 .why-us__item {
   display: flex;
@@ -284,7 +284,8 @@
     gap: var(--gap-small, 0.75rem);
     padding: var(--gap-normal, 1rem) var(--gap-small, 0.75rem);
     border-radius: var(--radius, 12px);
-    background-color: #454545;;
+    background-color: #454545;
+    flex-grow: 1;
 }
 .contact__card-info{
     display: flex;
@@ -298,4 +299,24 @@
     display: flex;
     align-items: center;
     gap: var(--gap-xsmall, 0.5rem);
+}
+/* Form */
+.contact-form{
+    padding-inline: calc(var(--gap-slarge, 2.25rem) * -1);
+}
+/* Location */
+.location__text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xsmall, 0.5rem);
+    margin-block: var(--gap-slarge, 2.25rem); ;
+}
+.location__main{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-normal, 1rem);
+}
+.location__address, .location__company-detail{
+    display: flex;
+    flex-direction: column;
 }

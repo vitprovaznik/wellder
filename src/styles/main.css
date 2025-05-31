@@ -9,6 +9,7 @@ layer(reset); */
 
 @import url(components.css) layer(components);
 @import url(accordion.css) layer(components);
+@import url(contact-form.css) layer(components);
 
 @import url(typography.css) layer(typography);
 @import url(animations.css) layer(animations);
@@ -74,13 +75,13 @@ layer(reset); */
     overflow-x: hidden;
     overflow-y: scroll;
   }
-  *,
+  /* *,
   *::before,
   *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+  } */
   h1,
   h2,
   h3,
