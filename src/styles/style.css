@@ -16,6 +16,7 @@
 
 .hero__heading {
   font-size: var(--font-size--mediumx, 1.5rem);
+  font-weight: var(--font-weight--medium, 600);
   animation: fadeInUp 0.5s ease-out forwards;
   opacity: 0;
 }
@@ -23,7 +24,7 @@
   .hero__heading {
     font-size: var(--font-size--xmedium, 2rem);
   }
-  .nav__logo-img {
+  .logo-img {
     height: 34px;
     width: 293px;
   }
@@ -304,6 +305,12 @@
   background-color: #454545;
   flex-grow: 1;
 }
+.contact__card-socials{
+    transition: color 0.2s ease;
+}
+.contact__card-socials:hover {
+  color: var(--orange, #e97818);
+}
 .contact__card-info {
   display: flex;
   flex-direction: column;
@@ -337,4 +344,56 @@
 .location__company-detail {
   display: flex;
   flex-direction: column;
+}
+
+/* Footer */
+.background--footer {
+  background-color: #2D2D2D;
+}
+.page__footer{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-large, 2rem);
+}
+.footer__brand{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-normal, 1rem);
+}
+.footer__main{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__contact{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-medium, 1.55rem);
+}
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__link{
+    text-decoration: none;
+    color: var(--white, #fff);
+    font-size: var(--font-size--normal, 1rem);
+    font-weight: var(--font-weight--normal, 400);
+    transition: color 0.2s ease;
+}
+.footer__link:hover{
+    color: var(--orange, #e97818);
+}
+.footer__contact-place, .footer__contact-social{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small, 0.75rem);
+}
+.footer__text-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xsmall, 0.5rem);
+}
+.footer__contact-place .footer__text-container{
+    gap: 0;
 }
