@@ -1,37 +1,42 @@
-/* .contact-form{
-    margin-inline: calc(var(--gap-slarge, 2.25rem) * -1);
-    margin-top: 4rem;
-    padding: var(--gap-slarge, 2.25rem) 0;
-    background: #2c2c2c;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-.contact-form > *{
+.contact-form {
+  margin-inline: calc(var(--gap-slarge, 2.25rem) * -1);
+  margin-top: 4rem;
+  padding: var(--gap-slarge, 2.25rem) 0;
+  background: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  // align-items: start;
+
+  > * {
     padding-inline: var(--gap-slarge, 2.25rem);
-}
-.contact-form__group{
+  }
+
+  &__group {
     display: flex;
     flex-direction: column;
     gap: var(--gap-xsmall, 0.5rem);
     margin-bottom: var(--gap-medium, 1.55rem);
-    
-}
-.contact-form__title{
+  }
+
+  &__title {
     margin-bottom: var(--gap-slarge, 2.25rem);
-}
-.contact-form__label{
+  }
+
+  &__label {
     margin-left: var(--gap-normal, 1rem);
-}
-.contact-form__input, .contact-form__textarea{
+  }
+
+  &__input,
+  &__textarea {
     padding: var(--gap-small, 0.75rem) var(--gap-normal, 1rem);
     border-radius: var(--radius, 12px);
     background-color: #454545;
     color: var(--white, #fff);
     border: none;
     font-size: var(--font-size--normal, 1rem);
-}
-.contact-form__dropzone {
+  }
+
+  &__dropzone {
     padding: var(--gap-normal, 1rem);
     border: 2px dashed var(--primary, #e97818);
     border-radius: var(--radius, 12px);
@@ -42,23 +47,25 @@
     font-size: var(--font-size--normal, 1rem);
     min-height: 48px;
     transition: 
-        border-color 0.2s,
-        background 0.2s,
-        color 0.2s;
+      border-color 0.2s,
+      background 0.2s,
+      color 0.2s;
     user-select: none;
     margin-top: 0.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.contact-form__dropzone--active {
-    border-color: #fff;
-    background: #363636;
-    color: var(--primary, #e97818);
-    box-shadow: 0 0 0 2px var(--primary, #e97818) inset;
-}
-.contact-form__button{
+    &--active {
+      border-color: #fff;
+      background: #363636;
+      color: var(--primary, #e97818);
+      box-shadow: 0 0 0 2px var(--primary, #e97818) inset;
+    }
+  }
+
+  &__button {
     margin-inline: var(--gap-slarge, 2.25rem);
     align-self: start;
-} */
+  }
+}

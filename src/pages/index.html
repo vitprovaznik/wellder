@@ -14,6 +14,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/contact-form.scss">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
@@ -713,8 +714,8 @@
               </div>
             </article>
           </div>
-          <form class="contact-form" action="#" method="post" enctype="multipart/form-data">
-            <h4 class="contact-form__title">Máte otázku?</h4>
+          <form class="contact-form" action="https://formsubmit.co/w" method="post" enctype="multipart/form-data">
+            <h4 class="contact-form__title text--medium text--orange section__subheading">Máte otázku?</h4>
             <div class="contact-form__group">
               <label class="contact-form__label" for="name">Vaše jméno:</label>
               <input
@@ -740,7 +741,7 @@
             </div>
 
             <div class="contact-form__group">
-              <label class="contact-form__label" for="message">Máte otázku? Napište nám.</label>
+              <label class="contact-form__label" for="message">Potřebujete poradit? Napište nám.</label>
               <textarea
                 class="contact-form__textarea"
                 id="message"
@@ -753,6 +754,9 @@
             <div class="contact-form__group">
               <label class="contact-form__label">Přiložit soubor:</label>
               <div class="contact-form__dropzone" id="dropzone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <path d="M7.91667 31.6667H30.0833V28.5H7.91667V31.6667ZM7.91667 15.8333H14.25V25.3333H23.75V15.8333H30.0833L19 4.75L7.91667 15.8333Z" fill="#E97818"/>
+                </svg>
                 Přetáhněte soubor sem nebo klikněte pro výběr
                 <input class="contact-form__file" type="file" name="file" id="fileInput" hidden>
               </div>

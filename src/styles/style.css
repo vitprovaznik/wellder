@@ -300,11 +300,11 @@
     align-items: center;
     gap: var(--gap-xsmall, 0.5rem);
 }
-/* Form */
-.contact-form{
-    padding-inline: calc(var(--gap-slarge, 2.25rem) * -1);
-}
+
 /* Location */
+.location{
+    padding-top: 0;
+}
 .location__text{
     display: flex;
     flex-direction: column;
