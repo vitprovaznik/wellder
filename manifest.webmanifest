@@ -1,8 +1,8 @@
 {
   "name": "Kovovýroba WELLDER s. r. o. je specializovaná firma v oblasti zpracování kovů, nabízí kompletní frézařské a soustružnické práce, obrábění na CNC strojích, svařování, vrtání, lisování, ohraňování a dělení materiálu.",
   "short_name": "Kovovýroba WELLDER s.r.o.",
-  "theme_color": "#2196f3",
-  "background_color": "#e97818",
+  "theme_color": "#e97818",
+  "background_color": "#2196f3",
   "display": "browser",
   "scope": "/",
   "start_url": "/"
