@@ -78,3 +78,6 @@
   object-fit: cover;
   object-position: center;
 }
+#back-to-top{
+  z-index: 20;
+}

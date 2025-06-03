@@ -1,5 +1,19 @@
 import Accordion from "accordion-js";
-new Accordion(".accordion-container");
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector(".accordion-container");
+  if (container) {
+    new Accordion(".accordion-container");
+  }
+});
+
+import { addBackToTop } from "vanilla-back-to-top";
+addBackToTop({
+  diameter: 56,
+  backgroundColor: "rgb(255, 255, 255)",
+  textColor: "#e97818",
+  zIndex: 1000,
+  scrollDuration: 50,
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerButton = document.querySelector(`.hamburger-btn`);
@@ -44,37 +58,43 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-const dropzone = document.getElementById('dropzone');
-  const fileInput = document.getElementById('fileInput');
-  const filename = document.getElementById('filename');
+const dropzone = document.getElementById("dropzone");
+const fileInput = document.getElementById("fileInput");
+const filename = document.getElementById("filename");
 
-  dropzone.addEventListener('click', () => fileInput.click());
+if (dropzone) {
+  dropzone.addEventListener("click", () => {
+    if (fileInput) fileInput.click();
+  });
 
-  dropzone.addEventListener('dragover', (e) => {
+  dropzone.addEventListener("dragover", (e) => {
     e.preventDefault();
-    dropzone.classList.add('contact-form__dropzone--active');
+    dropzone.classList.add("contact-form__dropzone--active");
   });
 
-  dropzone.addEventListener('dragleave', () => {
-    dropzone.classList.remove('contact-form__dropzone--active');
+  dropzone.addEventListener("dragleave", () => {
+    dropzone.classList.remove("contact-form__dropzone--active");
   });
 
-  dropzone.addEventListener('drop', (e) => {
+  dropzone.addEventListener("drop", (e) => {
     e.preventDefault();
-    dropzone.classList.remove('contact-form__dropzone--active');
-    fileInput.files = e.dataTransfer.files;
-    filename.textContent = fileInput.files[0]?.name || '';
+    dropzone.classList.remove("contact-form__dropzone--active");
+    if (fileInput) {
+      fileInput.files = e.dataTransfer.files;
+      if (filename) {
+        filename.textContent = fileInput.files[0]?.name || "";
+      }
+    }
   });
+}
 
-  fileInput.addEventListener('change', () => {
-    filename.textContent = fileInput.files[0]?.name || '';
+if (fileInput) {
+  fileInput.addEventListener("change", () => {
+    if (filename) {
+      filename.textContent = fileInput.files[0]?.name || "";
+    }
   });
+}
 
-  // Optional: show file name on submit and prevent empty file
-  document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    // Example: prevent submit if file is required and not selected
-    // if (fileInput.files.length === 0) {
-    //   e.preventDefault();
-    //   alert('Přiložte soubor.');
-    // }
-  });
+// document.querySelector('.contact-form').addEventListener('submit', function(e) {
+// });

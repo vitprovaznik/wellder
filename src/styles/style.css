@@ -397,3 +397,30 @@
 .footer__contact-place .footer__text-container{
     gap: 0;
 }
+
+/* Stroje a zařízení */
+.machines{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-slarge, 2.25rem);
+}
+.machines__text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-normal, 1rem);
+}
+.machines__list-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small, 0.75rem);
+}
+.machines__list{
+    margin: 0;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xsmall, 0.5rem);
+}
+.machines__button{
+    align-self: start;
+}

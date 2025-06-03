@@ -1,0 +1,16 @@
+.gallery {
+}
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+.gallery__item {
+  background: #ffda0c;
+  border-radius: 1rem;
+  height: 40px;
+  box-shadow: 0 2px 8px #0001;
+}
+.gallery__item--big {
+  grid-column: span 3;
+}

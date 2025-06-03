@@ -8,6 +8,7 @@ layer(reset); */
 @import url(style.css) layer(content);
 
 @import url(components.css) layer(components);
+@import url(gallery.css) layer(components);
 @import url(accordion.css) layer(components);
 @import url(contact-form.css) layer(components);
 
