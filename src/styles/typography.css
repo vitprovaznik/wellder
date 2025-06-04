@@ -49,3 +49,16 @@
 .centered {
   text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+
+  html{
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+
+  html{
+    font-size: 20px;
+  }
+}

@@ -7,6 +7,7 @@
       name="description"
       content="Nabízíme kompletní frézařské a soustružnické práce, obrábění na CNC strojích, svařování, vrtání, lisování, ohraňování a dělení materiálu."
     />
+    <meta name="format-detection" content="telephone=no" />
     <meta
       name="keywords"
       content="kovovýroba, wellder, obrábění, frézování, svařování, vrtání"
@@ -84,36 +85,30 @@
           <menu class="hamburger-menu">
             <li class="">
               <a
-                class="hamburger-menu__items text--black"
+                class="hamburger-menu__items text--black tablet-hidden"
                 href="#header"
                 >Home</a
               >
             </li>
             <li class="">
-              <a
-                class="hamburger-menu__items text--black"
-                href="#about"
+              <a class="hamburger-menu__items text--black" href="#about"
                 >O nás</a
               >
             </li>
             <li class="">
               <a
-                class="hamburger-menu__items text--black"
+                class="hamburger-menu__items text--black tablet-hidden"
                 href="#technologies"
                 >Technologie</a
               >
             </li>
             <li class="">
-              <a
-                class="hamburger-menu__items text--black"
-                href="#projects"
+              <a class="hamburger-menu__items text--black" href="#projects"
                 >Projekty</a
               >
             </li>
             <li class="">
-              <a
-                class="hamburger-menu__items text--black"
-                href="#contact"
+              <a class="hamburger-menu__items text--black" href="#contact"
                 >Kontakt</a
               >
             </li>
@@ -159,7 +154,7 @@
             Zpracování železných i neželezných kovů. Výroba jednoúčelových
             zařízení.
           </p>
-          <a href="#projects" class="button button--with-arrow">Mám zájem</a>
+          <a href="#projects" class="button button--with-arrow">Naše práce</a>
           <p class="text--gray hero__text">
             Díly, stroje a stavební prvky – od návrhu po výrobu a montáž.
           </p>
@@ -187,6 +182,36 @@
               fetchpriority="high"
             />
           </picture>
+        </div>
+        <div class="hero__side-popup">
+          <a class="hero__side-popup-item" href="tel:+420731655495">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="13"
+              viewBox="0 0 14 13"
+              fill="none"
+            >
+              <path
+                d="M9.76638 8.33993L9.41249 8.68635C9.41249 8.68635 8.57016 9.50918 6.27185 7.26245C3.97353 5.01573 4.81586 4.1929 4.81586 4.1929L5.0383 3.97419C5.58818 3.43736 5.64029 2.57477 5.16041 1.94465L4.18042 0.657637C3.5862 -0.12237 2.43898 -0.225606 1.75843 0.439694L0.537329 1.63264C0.200554 1.963 -0.0250007 2.38971 0.00222132 2.86383C0.0722209 4.07743 0.630661 6.68739 3.74486 9.73247C7.04806 12.9611 10.1475 13.0896 11.4145 12.9733C11.8158 12.9366 12.1643 12.7363 12.445 12.461L13.5495 11.3812C14.2961 10.6524 14.0861 9.40212 13.131 8.89206L11.6455 8.09752C11.0186 7.76334 10.2564 7.86122 9.76638 8.33993Z"
+                fill="#E97818"
+              />
+            </svg>
+          </a>
+          <a class="hero__side-popup-item" href="mailto:wellder@wellder.cz"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="12"
+              viewBox="0 0 14 12"
+              fill="none"
+            >
+              <path
+                d="M1.4 12C1.015 12 0.685533 11.8532 0.4116 11.5597C0.137667 11.2662 0.000466667 10.913 0 10.5V1.5C0 1.0875 0.1372 0.7345 0.4116 0.441C0.686 0.1475 1.01547 0.0005 1.4 0H12.6C12.985 0 13.3147 0.147 13.5891 0.441C13.8635 0.735 14.0005 1.088 14 1.5V10.5C14 10.9125 13.863 11.2657 13.5891 11.5597C13.3152 11.8537 12.9855 12.0005 12.6 12H1.4ZM7 6.75L12.6 3V1.5L7 5.25L1.4 1.5V3L7 6.75Z"
+                fill="#E97818"
+              />
+            </svg>
+          </a>
         </div>
       </section>
       <div class="background background--about" id="about">
@@ -360,7 +385,7 @@
               <span class="why-us__label">zkušeností v kovovýrobě</span>
             </article>
             <article class="why-us__item">
-              <span class="why-us__value why-us__value--plus">2000</span>
+              <span class="why-us__value why-us__value--plus">2000+</span>
               <span class="why-us__label">zakázek úspěšně dokončeno</span>
             </article>
           </div>
@@ -368,8 +393,13 @@
       </section>
       <div class="background background--technologies">
         <section class="page__section technologies" id="technologies">
-          <p class="section__heading centered">Technologie</p>
-          <!-- desktop - teaxt align left-->
+          <p class="section__heading technologies__heading centered">
+            Technologie
+          </p>
+          <p class="text--gray technologies__text hide-mobile">
+            Pracujeme s pokročilými CNC stroji a špičkovým technickým zázemím,
+            které zajišťují kvalitu každého výrobku.
+          </p>
           <div class="technologies__card-wrapper">
             <article class="technologies__card">
               <header class="technologies__card-header">
