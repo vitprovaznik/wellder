@@ -1,6 +1,5 @@
 .contact-form {
   margin-inline: calc(var(--gap-slarge, 2.25rem) * -1);
-  margin-top: 4rem;
   padding: var(--gap-slarge, 2.25rem) 0;
   background: #2c2c2c;
   display: flex;
@@ -10,7 +9,14 @@
   > * {
     padding-inline: var(--gap-slarge, 2.25rem);
   }
-
+  &__user-info-container {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 940px) {
+      flex-direction: row;
+      gap: var(--gap-medium, 1.55rem);
+    }
+  }
   &__group {
     display: flex;
     flex-direction: column;
@@ -41,15 +47,12 @@
     border: 2px dashed var(--primary, #e97818);
     border-radius: var(--radius, 12px);
     background: #454545;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     text-align: center;
     cursor: pointer;
     font-size: var(--font-size--normal, 1rem);
     min-height: 48px;
-    transition: 
-      border-color 0.2s,
-      background 0.2s,
-      color 0.2s;
+    transition: border-color 0.2s, background 0.2s, color 0.2s;
     user-select: none;
     margin-top: 0.2rem;
     display: flex;
@@ -67,5 +70,13 @@
   &__button {
     margin-inline: var(--gap-slarge, 2.25rem);
     align-self: start;
+  }
+
+  @media screen and (min-width: 940px) {
+    flex-basis: 50%;
+    flex-grow: 1;
+    margin-inline: 0;
+    margin-top: var(--gap-slarge, 2.25rem);
+    border-radius: var(--radius, 12px);
   }
 }
