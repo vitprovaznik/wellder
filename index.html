@@ -7,6 +7,7 @@
       name="description"
       content="Nabízíme kompletní frézařské a soustružnické práce, obrábění na CNC strojích, svařování, vrtání, lisování, ohraňování a dělení materiálu."
     />
+    <meta name="format-detection" content="telephone=no" />
     <meta
       name="keywords"
       content="kovovýroba, wellder, obrábění, frézování, svařování, vrtání"
@@ -43,13 +44,13 @@
     />
     <script type="module" crossorigin src="/wellder/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
     <script type="module" crossorigin src="/wellder/assets/main-B1y8C_ui.js"></script>
-    <link rel="stylesheet" crossorigin href="/wellder/assets/main-D3SPV97E.css">
-    <link rel="stylesheet" crossorigin href="/wellder/assets/contact-form-BPJlDEuc.css">
+    <link rel="stylesheet" crossorigin href="/wellder/assets/main-CA3ipXcP.css">
+    <link rel="stylesheet" crossorigin href="/wellder/assets/contact-form-BiMuKzj2.css">
   </head>
   <body class="page">
     <header class="page__header" id="header">
       <nav class="navbar">
-        <a class="navbar__logo" href="#header">
+        <a class="navbar__logo" href="/">
           <picture>
             <source
               srcset="/wellder/images/main/Wellder-kovovyroba.logo.webp"
@@ -84,45 +85,37 @@
         <div class="navbar__overlay"></div>
         <div class="hamburger-nav">
           <menu class="hamburger-menu">
-            <li class="">
-              <a
-                class="hamburger-menu__items text--black"
-                href="index.html#header"
+            <li class="tablet-hidden">
+              <a class="hamburger-menu__items text--black" href="#header"
                 >Home</a
               >
             </li>
             <li class="">
-              <a
-                class="hamburger-menu__items text--black"
-                href="index.html#about"
+              <a class="hamburger-menu__items text--black" href="#about"
                 >O nás</a
               >
             </li>
-            <li class="">
-              <a
-                class="hamburger-menu__items text--black"
-                href="index.html#techs"
+            <li class="tablet-hidden">
+              <a class="hamburger-menu__items text--black" href="#technologies"
                 >Technologie</a
               >
             </li>
             <li class="">
-              <a
-                class="hamburger-menu__items text--black"
-                href="index.html#projects"
+              <a class="hamburger-menu__items text--black" href="#projects"
                 >Projekty</a
               >
             </li>
             <li class="">
-              <a
-                class="hamburger-menu__items text--black"
-                href="index.html#contact"
+              <a class="hamburger-menu__items text--black" href="#contact"
                 >Kontakt</a
               >
             </li>
-            <li class="hide-mobile"><a href="#" class="button">Zavolat</a></li>
+            <li class="hide-mobile">
+              <a href="tel:+420731655495" class="button">Zavolat</a>
+            </li>
           </menu>
           <div class="hamburger-nav__icon-container">
-            <a href="#">
+            <a href="mailto:wellder@wellder.cz">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="29"
@@ -136,7 +129,7 @@
                 />
               </svg>
             </a>
-            <a href="#"
+            <a href="tel:+420731655495"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -161,7 +154,7 @@
             Zpracování železných i neželezných kovů. Výroba jednoúčelových
             zařízení.
           </p>
-          <a class="button button--with-arrow">Mám zájem</a>
+          <a href="#projects" class="button button--with-arrow">Naše práce</a>
           <p class="text--gray hero__text">
             Díly, stroje a stavební prvky – od návrhu po výrobu a montáž.
           </p>
@@ -189,6 +182,36 @@
               fetchpriority="high"
             />
           </picture>
+        </div>
+        <div class="hero__side-popup">
+          <a class="hero__side-popup-item" href="tel:+420731655495">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="13"
+              viewBox="0 0 14 13"
+              fill="none"
+            >
+              <path
+                d="M9.76638 8.33993L9.41249 8.68635C9.41249 8.68635 8.57016 9.50918 6.27185 7.26245C3.97353 5.01573 4.81586 4.1929 4.81586 4.1929L5.0383 3.97419C5.58818 3.43736 5.64029 2.57477 5.16041 1.94465L4.18042 0.657637C3.5862 -0.12237 2.43898 -0.225606 1.75843 0.439694L0.537329 1.63264C0.200554 1.963 -0.0250007 2.38971 0.00222132 2.86383C0.0722209 4.07743 0.630661 6.68739 3.74486 9.73247C7.04806 12.9611 10.1475 13.0896 11.4145 12.9733C11.8158 12.9366 12.1643 12.7363 12.445 12.461L13.5495 11.3812C14.2961 10.6524 14.0861 9.40212 13.131 8.89206L11.6455 8.09752C11.0186 7.76334 10.2564 7.86122 9.76638 8.33993Z"
+                fill="#E97818"
+              />
+            </svg>
+          </a>
+          <a class="hero__side-popup-item" href="mailto:wellder@wellder.cz"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="12"
+              viewBox="0 0 14 12"
+              fill="none"
+            >
+              <path
+                d="M1.4 12C1.015 12 0.685533 11.8532 0.4116 11.5597C0.137667 11.2662 0.000466667 10.913 0 10.5V1.5C0 1.0875 0.1372 0.7345 0.4116 0.441C0.686 0.1475 1.01547 0.0005 1.4 0H12.6C12.985 0 13.3147 0.147 13.5891 0.441C13.8635 0.735 14.0005 1.088 14 1.5V10.5C14 10.9125 13.863 11.2657 13.5891 11.5597C13.3152 11.8537 12.9855 12.0005 12.6 12H1.4ZM7 6.75L12.6 3V1.5L7 5.25L1.4 1.5V3L7 6.75Z"
+                fill="#E97818"
+              />
+            </svg>
+          </a>
         </div>
       </section>
       <div class="background background--about" id="about">
@@ -362,7 +385,7 @@
               <span class="why-us__label">zkušeností v kovovýrobě</span>
             </article>
             <article class="why-us__item">
-              <span class="why-us__value why-us__value--plus">2000</span>
+              <span class="why-us__value why-us__value--plus">2000+</span>
               <span class="why-us__label">zakázek úspěšně dokončeno</span>
             </article>
           </div>
@@ -370,8 +393,13 @@
       </section>
       <div class="background background--technologies">
         <section class="page__section technologies" id="technologies">
-          <p class="section__heading centered">Technologie</p>
-          <!-- desktop - teaxt align left-->
+          <p class="section__heading technologies__heading centered">
+            Technologie
+          </p>
+          <p class="text--gray technologies__text hide-mobile">
+            Pracujeme s pokročilými CNC stroji a špičkovým technickým zázemím,
+            které zajišťují kvalitu každého výrobku.
+          </p>
           <div class="technologies__card-wrapper">
             <article class="technologies__card">
               <header class="technologies__card-header">
@@ -552,7 +580,10 @@
         <section class="page__section projects" id="projects">
           <p class="section__heading centered">Projekty</p>
           <div class="projects__card-wrapper">
-            <a href="strojeZarizeni.html" class="projects__card-link">
+            <a
+              href="/stroje-a-zarizeni/"
+              class="projects__card-link projects__card-link--large"
+            >
               <article class="projects__card" id="pc-1">
                 <span class="projects__card-title">Stroje a zařízení</span>
                 <p class="projects__card-text">
@@ -561,7 +592,7 @@
                 </p>
               </article>
             </a>
-            <a href="#" class="projects__card-link">
+            <a href="/schodiste-a-zabradli/" class="projects__card-link">
               <article class="projects__card" id="pc-2">
                 <span class="projects__card-title">Schodiště a zábradlí</span>
                 <p class="projects__card-text">
@@ -570,7 +601,7 @@
                 </p>
               </article>
             </a>
-            <a href="#" class="projects__card-link">
+            <a href="/brany-branky-oploceni/" class="projects__card-link">
               <article class="projects__card" id="pc-3">
                 <span class="projects__card-title"
                   >Brány, Branky, Oplocení</span
@@ -581,7 +612,7 @@
                 </p>
               </article>
             </a>
-            <a href="#" class="projects__card-link">
+            <a href="/ostatni/" class="projects__card-link">
               <article class="projects__card" id="pc-4">
                 <span class="projects__card-title">Ostatní</span>
                 <p class="projects__card-text">
@@ -595,245 +626,254 @@
       </div>
       <div class="background background--contact">
         <section class="page__section contact" id="contact">
-          <p class="section__heading contact__heading">Kontakty</p>
-          <p class="text--medium text--orange section__subheading">
-            Spojte se s námi
-          </p>
-          <div class="contact__card-container">
-            <article class="contact__card">
-              <span class="article__heading contact__card-title text--medium"
-                >Technolog - David Procházka</span
-              >
-              <div class="contact__card-info">
-                <div class="contact__card-icon-container">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    viewBox="0 0 18 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M12.5569 10.906L12.1019 11.359C12.1019 11.359 11.0189 12.435 8.06386 9.49698C5.10886 6.55898 6.19186 5.48298 6.19186 5.48298L6.47786 5.19698C7.18486 4.49498 7.25186 3.36698 6.63486 2.54298L5.37486 0.859979C4.61086 -0.160021 3.13586 -0.29502 2.26086 0.57498L0.690856 2.13498C0.257856 2.56698 -0.032144 3.12498 0.002856 3.74498C0.092856 5.33198 0.810856 8.74498 4.81486 12.727C9.06186 16.949 13.0469 17.117 14.6759 16.965C15.1919 16.917 15.6399 16.655 16.0009 16.295L17.4209 14.883C18.3809 13.93 18.1109 12.295 16.8829 11.628L14.9729 10.589C14.1669 10.152 13.1869 10.28 12.5569 10.906Z"
-                      fill="#E97818"
-                    />
-                  </svg>
-                  <a
-                    href="tel:+420731655495"
-                    class="contact__card-socials text--underline text--white"
-                    >+420 731 655 495</a
-                  >
-                </div>
-
-                <p class="contact__card-text text--gray">
-                  Dotazy k technickému řešení, strojům a výrobním možnostem.
-                </p>
-              </div>
-            </article>
-            <article class="contact__card">
-              <span class="article__heading contact__card-title text--medium"
-                >Administrativa - Marcela Vadlejchová</span
-              >
-              <div class="contact__card-info">
-                <div class="contact__card-icon-container">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    viewBox="0 0 18 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M12.5569 10.906L12.1019 11.359C12.1019 11.359 11.0189 12.435 8.06386 9.49698C5.10886 6.55898 6.19186 5.48298 6.19186 5.48298L6.47786 5.19698C7.18486 4.49498 7.25186 3.36698 6.63486 2.54298L5.37486 0.859979C4.61086 -0.160021 3.13586 -0.29502 2.26086 0.57498L0.690856 2.13498C0.257856 2.56698 -0.032144 3.12498 0.002856 3.74498C0.092856 5.33198 0.810856 8.74498 4.81486 12.727C9.06186 16.949 13.0469 17.117 14.6759 16.965C15.1919 16.917 15.6399 16.655 16.0009 16.295L17.4209 14.883C18.3809 13.93 18.1109 12.295 16.8829 11.628L14.9729 10.589C14.1669 10.152 13.1869 10.28 12.5569 10.906Z"
-                      fill="#E97818"
-                    />
-                  </svg>
-                  <a
-                    href="tel:+420604677179"
-                    class="contact__card-socials text--underline text--white"
-                    >+420 604 677 179</a
-                  >
-                </div>
-                <div class="contact__card-icon-container">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="17"
-                    viewBox="0 0 20 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M2 16.5C1.45 16.5 0.979333 16.3043 0.588 15.913C0.196667 15.5217 0.000666667 15.0507 0 14.5V2.5C0 1.95 0.196 1.47933 0.588 1.088C0.98 0.696666 1.45067 0.500667 2 0.5H18C18.55 0.5 19.021 0.696 19.413 1.088C19.805 1.48 20.0007 1.95067 20 2.5V14.5C20 15.05 19.8043 15.521 19.413 15.913C19.0217 16.305 18.5507 16.5007 18 16.5H2ZM10 9.5L18 4.5V2.5L10 7.5L2 2.5V4.5L10 9.5Z"
-                      fill="#E97818"
-                    />
-                  </svg>
-                  <a
-                    href="mailto:fakturace@wellder.cz"
-                    class="contact__card-socials text--underline text--white"
-                    >fakturace@wellder.cz</a
-                  >
-                </div>
-
-                <p class="contact__card-text text--gray">
-                  Fakturace, smlouvy, poptávky, dokumentace.
-                </p>
-              </div>
-            </article>
-            <article class="contact__card">
-              <span class="article__heading contact__card-title text--medium"
-                >Jednatelé společnosti - David Lenčéš, Stanislav Vadlejch</span
-              >
-              <div class="contact__card-info">
-                <div class="contact__card-icon-container">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    viewBox="0 0 18 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M12.5569 10.906L12.1019 11.359C12.1019 11.359 11.0189 12.435 8.06386 9.49698C5.10886 6.55898 6.19186 5.48298 6.19186 5.48298L6.47786 5.19698C7.18486 4.49498 7.25186 3.36698 6.63486 2.54298L5.37486 0.859979C4.61086 -0.160021 3.13586 -0.29502 2.26086 0.57498L0.690856 2.13498C0.257856 2.56698 -0.032144 3.12498 0.002856 3.74498C0.092856 5.33198 0.810856 8.74498 4.81486 12.727C9.06186 16.949 13.0469 17.117 14.6759 16.965C15.1919 16.917 15.6399 16.655 16.0009 16.295L17.4209 14.883C18.3809 13.93 18.1109 12.295 16.8829 11.628L14.9729 10.589C14.1669 10.152 13.1869 10.28 12.5569 10.906Z"
-                      fill="#E97818"
-                    />
-                  </svg>
-                  <a
-                    href="tel:+420608984496"
-                    class="contact__card-socials text--underline text--white"
-                    >+420 608 984 496</a
-                  >
-                </div>
-                <div class="contact__card-icon-container">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    viewBox="0 0 18 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M12.5569 10.906L12.1019 11.359C12.1019 11.359 11.0189 12.435 8.06386 9.49698C5.10886 6.55898 6.19186 5.48298 6.19186 5.48298L6.47786 5.19698C7.18486 4.49498 7.25186 3.36698 6.63486 2.54298L5.37486 0.859979C4.61086 -0.160021 3.13586 -0.29502 2.26086 0.57498L0.690856 2.13498C0.257856 2.56698 -0.032144 3.12498 0.002856 3.74498C0.092856 5.33198 0.810856 8.74498 4.81486 12.727C9.06186 16.949 13.0469 17.117 14.6759 16.965C15.1919 16.917 15.6399 16.655 16.0009 16.295L17.4209 14.883C18.3809 13.93 18.1109 12.295 16.8829 11.628L14.9729 10.589C14.1669 10.152 13.1869 10.28 12.5569 10.906Z"
-                      fill="#E97818"
-                    />
-                  </svg>
-                  <a
-                    href="tel:+420734313550"
-                    class="contact__card-socials text--underline text--white"
-                    >+420 734 313 550</a
-                  >
-                </div>
-                <div class="contact__card-icon-container">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="17"
-                    viewBox="0 0 20 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M2 16.5C1.45 16.5 0.979333 16.3043 0.588 15.913C0.196667 15.5217 0.000666667 15.0507 0 14.5V2.5C0 1.95 0.196 1.47933 0.588 1.088C0.98 0.696666 1.45067 0.500667 2 0.5H18C18.55 0.5 19.021 0.696 19.413 1.088C19.805 1.48 20.0007 1.95067 20 2.5V14.5C20 15.05 19.8043 15.521 19.413 15.913C19.0217 16.305 18.5507 16.5007 18 16.5H2ZM10 9.5L18 4.5V2.5L10 7.5L2 2.5V4.5L10 9.5Z"
-                      fill="#E97818"
-                    />
-                  </svg>
-                  <a
-                    href="mailto:wellder@wellder.cz"
-                    class="contact__card-socials text--underline text--white"
-                    >wellder@wellder.cz</a
-                  >
-                </div>
-                <p class="contact__card-text text--gray">
-                  Obchodní spolupráce, důležitá jednání, vedení firmy.
-                </p>
-              </div>
-            </article>
+          <div class="contact__text">
+            <p class="section__heading contact__heading">Kontakty</p>
+            <p class="text--medium text--orange section__subheading">
+              Spojte se s námi
+            </p>
           </div>
-          <form
-            class="contact-form"
-            action="https://formsubmit.co/wellder@wellder.cz"
-            method="post"
-            enctype="multipart/form-data"
-          >
-            <h4
-              class="contact-form__title text--medium text--orange section__subheading"
-            >
-              Máte otázku?
-            </h4>
-            <div class="contact-form__group">
-              <label class="contact-form__label" for="name">Vaše jméno:</label>
-              <input
-                class="contact-form__input"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Jan Omáčka"
-                required
-              />
-            </div>
-
-            <div class="contact-form__group">
-              <label class="contact-form__label" for="email">Email:</label>
-              <input
-                class="contact-form__input"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="jan.omacka@email.cz"
-                required
-              />
-            </div>
-
-            <div class="contact-form__group">
-              <label class="contact-form__label" for="message"
-                >Potřebujete poradit? Napište nám.</label
-              >
-              <textarea
-                class="contact-form__textarea"
-                id="message"
-                name="message"
-                placeholder="Zajímal by mě návrh řešení na míru..."
-                rows="4"
-                required
-              ></textarea>
-            </div>
-            <div class="contact-form__group">
-              <label class="contact-form__label"
-                >Přiložit soubor <span>(nepovinné)</span>:</label
-              >
-              <div class="contact-form__dropzone" id="dropzone">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="38"
-                  height="38"
-                  viewBox="0 0 38 38"
-                  fill="none"
+          <div class="contact__card-form-wrapper">
+            <div class="contact__card-container">
+              <article class="contact__card">
+                <span class="article__heading contact__card-title text--medium"
+                  >Technolog - David Procházka</span
                 >
-                  <path
-                    d="M7.91667 31.6667H30.0833V28.5H7.91667V31.6667ZM7.91667 15.8333H14.25V25.3333H23.75V15.8333H30.0833L19 4.75L7.91667 15.8333Z"
-                    fill="#E97818"
-                  />
-                </svg>
-                Přetáhněte soubor sem nebo klikněte pro výběr
-                <input
-                  class="contact-form__file"
-                  type="file"
-                  name="file"
-                  id="fileInput"
-                  hidden
-                />
-              </div>
-              <div class="contact-form__filename" id="filename"></div>
+                <div class="contact__card-info">
+                  <div class="contact__card-icon-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="17"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.5569 10.906L12.1019 11.359C12.1019 11.359 11.0189 12.435 8.06386 9.49698C5.10886 6.55898 6.19186 5.48298 6.19186 5.48298L6.47786 5.19698C7.18486 4.49498 7.25186 3.36698 6.63486 2.54298L5.37486 0.859979C4.61086 -0.160021 3.13586 -0.29502 2.26086 0.57498L0.690856 2.13498C0.257856 2.56698 -0.032144 3.12498 0.002856 3.74498C0.092856 5.33198 0.810856 8.74498 4.81486 12.727C9.06186 16.949 13.0469 17.117 14.6759 16.965C15.1919 16.917 15.6399 16.655 16.0009 16.295L17.4209 14.883C18.3809 13.93 18.1109 12.295 16.8829 11.628L14.9729 10.589C14.1669 10.152 13.1869 10.28 12.5569 10.906Z"
+                        fill="#E97818"
+                      />
+                    </svg>
+                    <a
+                      href="tel:+420731655495"
+                      class="contact__card-socials text--underline text--white"
+                      >+420 731 655 495</a
+                    >
+                  </div>
+
+                  <p class="contact__card-text text--gray">
+                    Dotazy k technickému řešení, strojům a výrobním možnostem.
+                  </p>
+                </div>
+              </article>
+              <article class="contact__card">
+                <span class="article__heading contact__card-title text--medium"
+                  >Administrativa - Marcela Vadlejchová</span
+                >
+                <div class="contact__card-info">
+                  <div class="contact__card-icon-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="17"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.5569 10.906L12.1019 11.359C12.1019 11.359 11.0189 12.435 8.06386 9.49698C5.10886 6.55898 6.19186 5.48298 6.19186 5.48298L6.47786 5.19698C7.18486 4.49498 7.25186 3.36698 6.63486 2.54298L5.37486 0.859979C4.61086 -0.160021 3.13586 -0.29502 2.26086 0.57498L0.690856 2.13498C0.257856 2.56698 -0.032144 3.12498 0.002856 3.74498C0.092856 5.33198 0.810856 8.74498 4.81486 12.727C9.06186 16.949 13.0469 17.117 14.6759 16.965C15.1919 16.917 15.6399 16.655 16.0009 16.295L17.4209 14.883C18.3809 13.93 18.1109 12.295 16.8829 11.628L14.9729 10.589C14.1669 10.152 13.1869 10.28 12.5569 10.906Z"
+                        fill="#E97818"
+                      />
+                    </svg>
+                    <a
+                      href="tel:+420604677179"
+                      class="contact__card-socials text--underline text--white"
+                      >+420 604 677 179</a
+                    >
+                  </div>
+                  <div class="contact__card-icon-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="17"
+                      viewBox="0 0 20 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M2 16.5C1.45 16.5 0.979333 16.3043 0.588 15.913C0.196667 15.5217 0.000666667 15.0507 0 14.5V2.5C0 1.95 0.196 1.47933 0.588 1.088C0.98 0.696666 1.45067 0.500667 2 0.5H18C18.55 0.5 19.021 0.696 19.413 1.088C19.805 1.48 20.0007 1.95067 20 2.5V14.5C20 15.05 19.8043 15.521 19.413 15.913C19.0217 16.305 18.5507 16.5007 18 16.5H2ZM10 9.5L18 4.5V2.5L10 7.5L2 2.5V4.5L10 9.5Z"
+                        fill="#E97818"
+                      />
+                    </svg>
+                    <a
+                      href="mailto:fakturace@wellder.cz"
+                      class="contact__card-socials text--underline text--white"
+                      >fakturace@wellder.cz</a
+                    >
+                  </div>
+
+                  <p class="contact__card-text text--gray">
+                    Fakturace, smlouvy, poptávky, dokumentace.
+                  </p>
+                </div>
+              </article>
+              <article class="contact__card">
+                <span class="article__heading contact__card-title text--medium"
+                  >Jednatelé společnosti - David Lenčéš, Stanislav
+                  Vadlejch</span
+                >
+                <div class="contact__card-info">
+                  <div class="contact__card-icon-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="17"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.5569 10.906L12.1019 11.359C12.1019 11.359 11.0189 12.435 8.06386 9.49698C5.10886 6.55898 6.19186 5.48298 6.19186 5.48298L6.47786 5.19698C7.18486 4.49498 7.25186 3.36698 6.63486 2.54298L5.37486 0.859979C4.61086 -0.160021 3.13586 -0.29502 2.26086 0.57498L0.690856 2.13498C0.257856 2.56698 -0.032144 3.12498 0.002856 3.74498C0.092856 5.33198 0.810856 8.74498 4.81486 12.727C9.06186 16.949 13.0469 17.117 14.6759 16.965C15.1919 16.917 15.6399 16.655 16.0009 16.295L17.4209 14.883C18.3809 13.93 18.1109 12.295 16.8829 11.628L14.9729 10.589C14.1669 10.152 13.1869 10.28 12.5569 10.906Z"
+                        fill="#E97818"
+                      />
+                    </svg>
+                    <a
+                      href="tel:+420608984496"
+                      class="contact__card-socials text--underline text--white"
+                      >+420 608 984 496</a
+                    >
+                  </div>
+                  <div class="contact__card-icon-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="17"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.5569 10.906L12.1019 11.359C12.1019 11.359 11.0189 12.435 8.06386 9.49698C5.10886 6.55898 6.19186 5.48298 6.19186 5.48298L6.47786 5.19698C7.18486 4.49498 7.25186 3.36698 6.63486 2.54298L5.37486 0.859979C4.61086 -0.160021 3.13586 -0.29502 2.26086 0.57498L0.690856 2.13498C0.257856 2.56698 -0.032144 3.12498 0.002856 3.74498C0.092856 5.33198 0.810856 8.74498 4.81486 12.727C9.06186 16.949 13.0469 17.117 14.6759 16.965C15.1919 16.917 15.6399 16.655 16.0009 16.295L17.4209 14.883C18.3809 13.93 18.1109 12.295 16.8829 11.628L14.9729 10.589C14.1669 10.152 13.1869 10.28 12.5569 10.906Z"
+                        fill="#E97818"
+                      />
+                    </svg>
+                    <a
+                      href="tel:+420734313550"
+                      class="contact__card-socials text--underline text--white"
+                      >+420 734 313 550</a
+                    >
+                  </div>
+                  <div class="contact__card-icon-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="17"
+                      viewBox="0 0 20 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M2 16.5C1.45 16.5 0.979333 16.3043 0.588 15.913C0.196667 15.5217 0.000666667 15.0507 0 14.5V2.5C0 1.95 0.196 1.47933 0.588 1.088C0.98 0.696666 1.45067 0.500667 2 0.5H18C18.55 0.5 19.021 0.696 19.413 1.088C19.805 1.48 20.0007 1.95067 20 2.5V14.5C20 15.05 19.8043 15.521 19.413 15.913C19.0217 16.305 18.5507 16.5007 18 16.5H2ZM10 9.5L18 4.5V2.5L10 7.5L2 2.5V4.5L10 9.5Z"
+                        fill="#E97818"
+                      />
+                    </svg>
+                    <a
+                      href="mailto:wellder@wellder.cz"
+                      class="contact__card-socials text--underline text--white"
+                      >wellder@wellder.cz</a
+                    >
+                  </div>
+                  <p class="contact__card-text text--gray">
+                    Obchodní spolupráce, důležitá jednání, vedení firmy.
+                  </p>
+                </div>
+              </article>
             </div>
-            <button type="submit" class="contact-form__button button">
-              Odeslat
-            </button>
-          </form>
+            <form
+              class="contact-form"
+              action="https://formsubmit.co/wellder@wellder.cz"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <h4
+                class="contact-form__title text--medium text--orange section__subheading"
+              >
+                Máte otázku?
+              </h4>
+              <div class="contact-form__user-info-container">
+                <div class="contact-form__group">
+                  <label class="contact-form__label" for="name"
+                    >Vaše jméno:</label
+                  >
+                  <input
+                    class="contact-form__input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Franta Flinta"
+                    required
+                  />
+                </div>
+
+                <div class="contact-form__group">
+                  <label class="contact-form__label" for="email">Email:</label>
+                  <input
+                    class="contact-form__input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="franta.flinta@email.cz"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="contact-form__group">
+                <label class="contact-form__label" for="message"
+                  >Potřebujete poradit? Napište nám.</label
+                >
+                <textarea
+                  class="contact-form__textarea"
+                  id="message"
+                  name="message"
+                  placeholder="Zajímal by mě návrh řešení na míru..."
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div class="contact-form__group">
+                <label class="contact-form__label"
+                  >Přiložit soubor <span>(nepovinné)</span>:</label
+                >
+                <div class="contact-form__dropzone" id="dropzone">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.91667 31.6667H30.0833V28.5H7.91667V31.6667ZM7.91667 15.8333H14.25V25.3333H23.75V15.8333H30.0833L19 4.75L7.91667 15.8333Z"
+                      fill="#E97818"
+                    />
+                  </svg>
+                  Přetáhněte soubor sem nebo klikněte pro výběr
+                  <input
+                    class="contact-form__file"
+                    type="file"
+                    name="file"
+                    id="fileInput"
+                    hidden
+                  />
+                </div>
+                <div class="contact-form__filename" id="filename"></div>
+              </div>
+              <button type="submit" class="contact-form__button button">
+                Odeslat
+              </button>
+            </form>
+          </div>
         </section>
         <section class="page__section location">
-          <p class="text--medium text--orange section__subheading">
-            Sídlo firmy
-          </p>
           <article class="location__text">
-            <header>
+            <p class="text--medium text--orange section__subheading">
+              Sídlo firmy
+            </p>
+            <header class="location__header">
               <span class="article__heading text--bold"
                 >Kovovýroba WELLDER s.r.o.</span
               >
@@ -886,7 +926,7 @@
           <div class="footer__links">
             <p class="article__heading text--medium">Odkazy</p>
 
-            <a class="footer__link" href="#header">
+            <a class="footer__link" href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="13"
@@ -991,8 +1031,157 @@
           </div>
         </div>
         <p class="text--gray">
-          Copyright © 2025 All Rights Reserved Kovovýroba WELLDER s.r.o.
+          Copyright © 2025 All Rights Reserved Kovovýroba WELLDER s.r.o.
         </p>
+      </footer>
+      <footer class="page__footer--desktop page__section">
+        <div class="footer__left">
+          <div class="footer__brand">
+            <a href="#header" class="footer__logo">
+              <picture>
+                <source
+                  srcset="/wellder/images/main/Wellder-kovovyroba.logo.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="/wellder/images/back/Wellder-kovovyroba.logo.png"
+                  width="241"
+                  height="28"
+                  alt="Logo WELLDER s.r.o."
+                  class="logo-img"
+                />
+              </picture>
+            </a>
+            <p>Specialisté na kovovýrobu – preciznost, kvalita a zkušenosti</p>
+          </div>
+          <div class="footer__contact-place">
+            <p class="article__heading text--medium">Sídlo</p>
+            <div class="footer__text-container">
+              <p>Písečná 301/12</p>
+              <p>Kokonín</p>
+              <p>468 01</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__middle">
+          <div class="footer__contact-social">
+            <p class="article__heading text--medium">Kontakty</p>
+            <div class="footer__text-container">
+              <div class="footer__contact-line">
+                <p>Technolog:</p>
+                <a class="text--orange text--underline" href="tel:+420731655495"
+                  >+420 731 655 495</a
+                >
+              </div>
+              <div class="footer__contact-line">
+                <p>Administrativa:</p>
+                <a class="text--orange text--underline" href="tel:+420604677179"
+                  >+420 604 677 179</a
+                >
+              </div>
+              <div class="footer__contact-line">
+                <p>Jednatel:</p>
+                <a class="text--orange text--underline" href="tel:+420608984496"
+                  >+420 608 984 496</a
+                >
+              </div>
+              <div class="footer__contact-line">
+                <p>Email:</p>
+                <a
+                  class="text--orange text--underline"
+                  href="mailto:wellder@wellder.cz"
+                  >wellder@wellder.cz</a
+                >
+              </div>
+            </div>
+          </div>
+          <p class="text--gray">
+            Copyright © 2025 All Rights Reserved Kovovýroba WELLDER s.r.o.
+          </p>
+        </div>
+        <div class="footer__right">
+          <p class="article__heading text--medium">Odkazy</p>
+
+          <a class="footer__link" href="/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="15"
+              viewBox="0 0 13 15"
+              fill="none"
+            >
+              <path
+                d="M12.7071 8.20711C13.0976 7.81658 13.0976 7.18342 12.7071 6.79289L6.34315 0.428932C5.95262 0.0384078 5.31946 0.0384078 4.92893 0.428932C4.53841 0.819457 4.53841 1.45262 4.92893 1.84315L10.5858 7.5L4.92893 13.1569C4.53841 13.5474 4.53841 14.1805 4.92893 14.5711C5.31946 14.9616 5.95262 14.9616 6.34315 14.5711L12.7071 8.20711ZM0 8.5H12V6.5H0V8.5Z"
+                fill="#E97818"
+              />
+            </svg>
+            Home
+          </a>
+
+          <a class="footer__link" href="#about">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="15"
+              viewBox="0 0 13 15"
+              fill="none"
+            >
+              <path
+                d="M12.7071 8.20711C13.0976 7.81658 13.0976 7.18342 12.7071 6.79289L6.34315 0.428932C5.95262 0.0384078 5.31946 0.0384078 4.92893 0.428932C4.53841 0.819457 4.53841 1.45262 4.92893 1.84315L10.5858 7.5L4.92893 13.1569C4.53841 13.5474 4.53841 14.1805 4.92893 14.5711C5.31946 14.9616 5.95262 14.9616 6.34315 14.5711L12.7071 8.20711ZM0 8.5H12V6.5H0V8.5Z"
+                fill="#E97818"
+              />
+            </svg>
+            O nás
+          </a>
+
+          <a class="footer__link" href="#technologies">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="15"
+              viewBox="0 0 13 15"
+              fill="none"
+            >
+              <path
+                d="M12.7071 8.20711C13.0976 7.81658 13.0976 7.18342 12.7071 6.79289L6.34315 0.428932C5.95262 0.0384078 5.31946 0.0384078 4.92893 0.428932C4.53841 0.819457 4.53841 1.45262 4.92893 1.84315L10.5858 7.5L4.92893 13.1569C4.53841 13.5474 4.53841 14.1805 4.92893 14.5711C5.31946 14.9616 5.95262 14.9616 6.34315 14.5711L12.7071 8.20711ZM0 8.5H12V6.5H0V8.5Z"
+                fill="#E97818"
+              />
+            </svg>
+            Technologie
+          </a>
+
+          <a class="footer__link" href="#projects">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="15"
+              viewBox="0 0 13 15"
+              fill="none"
+            >
+              <path
+                d="M12.7071 8.20711C13.0976 7.81658 13.0976 7.18342 12.7071 6.79289L6.34315 0.428932C5.95262 0.0384078 5.31946 0.0384078 4.92893 0.428932C4.53841 0.819457 4.53841 1.45262 4.92893 1.84315L10.5858 7.5L4.92893 13.1569C4.53841 13.5474 4.53841 14.1805 4.92893 14.5711C5.31946 14.9616 5.95262 14.9616 6.34315 14.5711L12.7071 8.20711ZM0 8.5H12V6.5H0V8.5Z"
+                fill="#E97818"
+              />
+            </svg>
+            Projekty
+          </a>
+
+          <a class="footer__link" href="#contact">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="15"
+              viewBox="0 0 13 15"
+              fill="none"
+            >
+              <path
+                d="M12.7071 8.20711C13.0976 7.81658 13.0976 7.18342 12.7071 6.79289L6.34315 0.428932C5.95262 0.0384078 5.31946 0.0384078 4.92893 0.428932C4.53841 0.819457 4.53841 1.45262 4.92893 1.84315L10.5858 7.5L4.92893 13.1569C4.53841 13.5474 4.53841 14.1805 4.92893 14.5711C5.31946 14.9616 5.95262 14.9616 6.34315 14.5711L12.7071 8.20711ZM0 8.5H12V6.5H0V8.5Z"
+                fill="#E97818"
+              />
+            </svg>
+            Kontakty
+          </a>
+        </div>
       </footer>
     </div>
   </body>
