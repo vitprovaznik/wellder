@@ -554,6 +554,9 @@
   flex-direction: column;
   gap: var(--gap-xsmall, 0.5rem);
 }
+.footer__text-container a:hover{
+    color: var(--gray, #bcbcbc);
+}
 .footer__contact-place .footer__text-container {
   gap: 0;
 }
