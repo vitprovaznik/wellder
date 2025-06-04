@@ -22,7 +22,7 @@
 }
 @media (min-width: 420px) {
   .hero__heading {
-    font-size: var(--font-size--xmedium, 2rem);
+    font-size: 1.8rem
   }
   .logo-img {
     height: 34px;
@@ -104,6 +104,9 @@
   .hero__grid {
     min-height: 500px;
     max-width: 450px;
+  }
+  .hero__heading{
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -484,6 +487,24 @@
   flex-direction: column;
   gap: var(--gap-large, 2rem);
 }
+
+.page__footer--desktop{
+    display: none;
+    justify-content: space-between;
+    min-height: 223px;
+    max-width: 900px;
+}
+.footer__left, .footer__middle, .footer__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__left{
+    max-width: 323px;
+}
+.footer__middle{
+    max-width: 300px;
+}
 .footer__brand {
   display: flex;
   flex-direction: column;
@@ -498,6 +519,12 @@
   flex-direction: column;
   gap: var(--gap-medium, 1.55rem);
 }
+.footer__contact-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-xsmall, 0.5rem);
+}
 .footer__links {
   display: flex;
   flex-direction: column;
@@ -509,6 +536,9 @@
   font-size: var(--font-size--normal, 1rem);
   font-weight: var(--font-weight--normal, 400);
   transition: color 0.2s ease;
+}
+.footer__link svg{
+    margin-right: 0.5rem;
 }
 .footer__link:hover {
   color: var(--orange, #e97818);
@@ -526,6 +556,20 @@
 }
 .footer__contact-place .footer__text-container {
   gap: 0;
+}
+footer p, footer a, .footer__link{
+    font-size: 16px;
+}
+footer .article__heading{
+    font-size: 20px;
+}
+@media screen and (min-width:940px){
+    .page__footer{
+        display: none;
+    }
+    .page__footer--desktop{
+        display: flex;
+    }
 }
 
 /* Podsekce */
