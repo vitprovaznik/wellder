@@ -38,9 +38,9 @@
     <title>Kovovýroba WELLDER s.r.o. – Kovovýroba na míru</title>
   </head>
   <body class="page">
-    <header class="page__header" id="header">
-      <nav class="navbar">
-        <a class="navbar__logo" href="/">
+    <header class="page__header" id="header" aria-label="Hlavní navigace">
+      <nav class="navbar" aria-label="Primární navigace">
+        <a class="navbar__logo" href="/" aria-label="Domů">
           <picture>
             <source
               srcset="/images/main/Wellder-kovovyroba.logo.webp"
@@ -407,11 +407,16 @@
                   Historie
                 </h3>
                 <p class="text--gray about__card-text">
-                  Naše cesta začala roku 2016 výrobou svařovaných a montovaných konstrukcí. Postupně jsme díky novým technologiím rozšířili výrobu o strojní součásti, kompletní montážní celky i jednoúčelové stroje.
+                  Naše cesta začala roku 2016 výrobou svařovaných a montovaných
+                  konstrukcí. Postupně jsme díky novým technologiím rozšířili
+                  výrobu o strojní součásti, kompletní montážní celky i
+                  jednoúčelové stroje.
                 </p>
               </article>
             </div>
-            <div class="about__card-container-splited about__card-container-splited--lower">
+            <div
+              class="about__card-container-splited about__card-container-splited--lower"
+            >
               <article class="about__card">
                 <h3 class="article__heading about__card-title text--medium">
                   <svg
@@ -429,7 +434,10 @@
                   Naše hodnoty
                 </h3>
                 <p class="text--gray about__card-text">
-                  Zakládáme si na poctivém řemesle, lidském přístupu a zodpovědnosti vůči zákazníkovi. Každý výrobek bereme jako vizitku naší práce – proto dbáme na detail, kvalitu a spolehlivost.
+                  Zakládáme si na poctivém řemesle, lidském přístupu a
+                  zodpovědnosti vůči zákazníkovi. Každý výrobek bereme jako
+                  vizitku naší práce – proto dbáme na detail, kvalitu a
+                  spolehlivost.
                 </p>
               </article>
               <article class="about__card">
@@ -459,14 +467,17 @@
                   Kde sídlíme
                 </h3>
                 <p class="text--gray about__card-text">
-                  Najdete nás v Kokoníně, v areálu na Písečné ulici. Odtud koordinujeme celou výrobu a zajišťujeme hladký průběh zakázek po celé republice.
+                  Najdete nás v Kokoníně, v areálu na Písečné ulici. Odtud
+                  koordinujeme celou výrobu a zajišťujeme hladký průběh zakázek
+                  po celé republice.
                 </p>
               </article>
             </div>
           </div>
         </section>
       </div>
-      <section class="why-us">
+      <div class="why-us__overflow-hidden-container">
+        <section class="why-us">
         <div class="why-us__content page__section">
           <h2 class="why-us__heading">Proč spolupracovat právě s námi?</h2>
           <div class="why-us__item-wrapper">
@@ -487,6 +498,8 @@
           </div>
         </div>
       </section>
+      </div>
+      
       <div class="background background--technologies">
         <section class="page__section technologies" id="technologies">
           <h2 class="section__heading technologies__heading centered">

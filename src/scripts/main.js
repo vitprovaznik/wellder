@@ -1,3 +1,4 @@
+//Accordion
 import Accordion from "accordion-js";
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".accordion-container");
@@ -5,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     new Accordion(".accordion-container");
   }
 });
-
+//Back to top
 import { addBackToTop } from "vanilla-back-to-top";
 addBackToTop({
   diameter: 56,
@@ -14,6 +15,16 @@ addBackToTop({
   zIndex: 1000,
   scrollDuration: 50,
 });
+
+//Lightgallery
+import lightGallery from 'lightgallery';
+import lgThumbnail from 'lightgallery/plugins/thumbnail'
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-thumbnail.css';
+lightGallery(document.querySelector(".gallery"), {
+        plugins: [lgThumbnail],
+        selector: "a"
+    });
 
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerButton = document.querySelector(`.hamburger-btn`);
@@ -56,6 +67,14 @@ document.addEventListener("DOMContentLoaded", () => {
       overlay.classList.remove("overlay--active");
       body.classList.remove("html--no-scroll");
     });
+  });
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      hamburgerButton.classList.remove("hamburger-btn--active");
+      hamburgerNav.classList.remove("hamburger-nav--active");
+      overlay.classList.remove("overlay--active");
+      body.classList.remove("html--no-scroll");
+    }
   });
 });
 const dropzone = document.getElementById("dropzone");

@@ -72,7 +72,7 @@ layer(reset); */
     color: var(--white, #fff);
     scroll-behavior: smooth;
     overscroll-behavior: none;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     overflow-y: scroll;
   }
   /* *,
@@ -110,10 +110,11 @@ layer(reset); */
     background-repeat: no-repeat;
     min-height: 100vh;
     min-height: 100svh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
     /* working or not? */
+    /* contain: paint; */
   }
 }
 @layer init {
