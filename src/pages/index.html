@@ -72,9 +72,9 @@
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
         </button>
-        <div class="navbar__overlay"></div>
-        <div class="hamburger-nav">
-          <menu class="hamburger-menu">
+        <div class="navbar__overlay" aria-hidden="true"></div>
+        <div class="hamburger-nav" aria-label="Mobilní menu">
+          <menu class="hamburger-menu" aria-label="Navigační odkazy">
             <li class="tablet-hidden">
               <a class="hamburger-menu__items text--black" href="#header"
                 >Home</a
@@ -105,7 +105,10 @@
             </li>
           </menu>
           <div class="hamburger-nav__icon-container">
-            <a href="mailto:wellder@wellder.cz">
+            <a
+              href="mailto:wellder@wellder.cz"
+              aria-label="Napsat na wellder@wellder.cz"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="29"
@@ -119,7 +122,7 @@
                 />
               </svg>
             </a>
-            <a href="tel:+420731655495"
+            <a href="tel:+420731655495" aria-label="Zavolat na +420 731 655 495"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -137,8 +140,8 @@
         </div>
       </nav>
     </header>
-    <main class="page__main">
-      <section class="page__section hero" id="hero">
+    <main class="page__main" aria-label="Hlavní obsah">
+      <section class="page__section hero" id="hero" aria-label="Úvodní sekce">
         <div class="hero__content">
           <h2 class="hero__heading">
             Zpracování železných i neželezných kovů. Výroba jednoúčelových
@@ -173,8 +176,12 @@
             />
           </picture>
         </div>
-        <div class="hero__side-popup">
-          <a class="hero__side-popup-item" href="tel:+420731655495">
+        <div class="hero__side-popup" aria-label="Rychlý kontakt">
+          <a
+            class="hero__side-popup-item"
+            href="tel:+420731655495"
+            aria-label="Zavolat na +420 731 655 495"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
@@ -188,7 +195,10 @@
               />
             </svg>
           </a>
-          <a class="hero__side-popup-item" href="mailto:wellder@wellder.cz"
+          <a
+            class="hero__side-popup-item"
+            href="mailto:wellder@wellder.cz"
+            aria-label="Napsat na wellder@wellder.cz"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
@@ -205,7 +215,7 @@
         </div>
       </section>
       <div class="background background--about" id="about">
-        <section class="page__section about">
+        <section class="page__section about" aria-label="O nás">
           <h2 class="section__heading">O nás</h2>
           <div class="accordion-container">
             <div class="ac">
@@ -359,7 +369,10 @@
             />
           </picture>
         </section>
-        <section class="page__section about--desktop">
+        <section
+          class="page__section about--desktop"
+          aria-label="O nás (desktop)"
+        >
           <h2 class="section__heading">O Nás</h2>
           <div class="about__card-container">
             <div class="about__card-container-splited">
@@ -477,31 +490,35 @@
         </section>
       </div>
       <div class="why-us__overflow-hidden-container">
-        <section class="why-us">
-        <div class="why-us__content page__section">
-          <h2 class="why-us__heading">Proč spolupracovat právě s námi?</h2>
-          <div class="why-us__item-wrapper">
-            <article class="why-us__item">
-              <span class="why-us__value"
-                >8 <span class="why-us__value--smaller">odborníků</span></span
-              >
-              <h3 class="why-us__label">s dlouholetými zkušenostmi</h3>
-            </article>
-            <article class="why-us__item">
-              <span class="why-us__value">25 let</span>
-              <h3 class="why-us__label">zkušeností v kovovýrobě</h3>
-            </article>
-            <article class="why-us__item">
-              <span class="why-us__value why-us__value--plus">2000+</span>
-              <h3 class="why-us__label">zakázek úspěšně dokončeno</h3>
-            </article>
+        <section class="why-us" aria-label="Proč spolupracovat právě s námi">
+          <div class="why-us__content page__section">
+            <h2 class="why-us__heading">Proč spolupracovat právě s námi?</h2>
+            <div class="why-us__item-wrapper">
+              <article class="why-us__item">
+                <span class="why-us__value"
+                  >8 <span class="why-us__value--smaller">odborníků</span></span
+                >
+                <h3 class="why-us__label">s dlouholetými zkušenostmi</h3>
+              </article>
+              <article class="why-us__item">
+                <span class="why-us__value">25 let</span>
+                <h3 class="why-us__label">zkušeností v kovovýrobě</h3>
+              </article>
+              <article class="why-us__item">
+                <span class="why-us__value why-us__value--plus">2000+</span>
+                <h3 class="why-us__label">zakázek úspěšně dokončeno</h3>
+              </article>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
-      
+
       <div class="background background--technologies">
-        <section class="page__section technologies" id="technologies">
+        <section
+          class="page__section technologies"
+          id="technologies"
+          aria-label="Technologie"
+        >
           <h2 class="section__heading technologies__heading centered">
             Technologie
           </h2>
@@ -691,7 +708,11 @@
         </section>
       </div>
       <div class="background background--projects">
-        <section class="page__section projects" id="projects">
+        <section
+          class="page__section projects"
+          id="projects"
+          aria-label="Projekty"
+        >
           <h2 class="section__heading centered">Projekty</h2>
           <div class="projects__card-wrapper">
             <a
@@ -737,7 +758,11 @@
         </section>
       </div>
       <div class="background background--contact">
-        <section class="page__section contact" id="contact">
+        <section
+          class="page__section contact"
+          id="contact"
+          aria-label="Kontakty"
+        >
           <div class="contact__text">
             <h2 class="section__heading contact__heading">Kontakty</h2>
             <p class="text--medium text--orange section__subheading">
@@ -746,7 +771,10 @@
           </div>
           <div class="contact__card-form-wrapper">
             <div class="contact__card-container">
-              <article class="contact__card">
+              <article
+                class="contact__card"
+                aria-label="Kontakt na technologa Davida Procházku"
+              >
                 <h3 class="article__heading contact__card-title text--medium">
                   Technolog - David Procházka
                 </h3>
@@ -767,6 +795,7 @@
                     <a
                       href="tel:+420731655495"
                       class="contact__card-socials text--underline text--white"
+                      aria-label="Zavolat technologovi Davidu Procházkovi na +420 731 655 495"
                       >+420 731 655 495</a
                     >
                   </div>
@@ -776,7 +805,10 @@
                   </p>
                 </div>
               </article>
-              <article class="contact__card">
+              <article
+                class="contact__card"
+                aria-label="Kontakt na administrativu Marcelu Vadlejchovou"
+              >
                 <h3 class="article__heading contact__card-title text--medium">
                   Administrativa - Marcela Vadlejchová
                 </h3>
@@ -797,6 +829,7 @@
                     <a
                       href="tel:+420604677179"
                       class="contact__card-socials text--underline text--white"
+                      aria-label="Zavolat administrativě na +420 604 677 179"
                       >+420 604 677 179</a
                     >
                   </div>
@@ -816,6 +849,7 @@
                     <a
                       href="mailto:fakturace@wellder.cz"
                       class="contact__card-socials text--underline text--white"
+                      aria-label="Napsat na fakturace@wellder.cz"
                       >fakturace@wellder.cz</a
                     >
                   </div>
@@ -825,7 +859,10 @@
                   </p>
                 </div>
               </article>
-              <article class="contact__card">
+              <article
+                class="contact__card"
+                aria-label="Kontakt na jednatele Davida Lenčéše a Stanislava Vadlejcha"
+              >
                 <h3 class="article__heading contact__card-title text--medium">
                   Jednatelé společnosti - David Lenčéš, Stanislav Vadlejch
                 </h3>
@@ -846,6 +883,7 @@
                     <a
                       href="tel:+420608984496"
                       class="contact__card-socials text--underline text--white"
+                      aria-label="Zavolat jednateli Davidu Lenčéšovi na +420 608 984 496"
                       >+420 608 984 496</a
                     >
                   </div>
@@ -865,6 +903,7 @@
                     <a
                       href="tel:+420734313550"
                       class="contact__card-socials text--underline text--white"
+                      aria-label="Zavolat jednateli Stanislavu Vadlejchovi na +420 734 313 550"
                       >+420 734 313 550</a
                     >
                   </div>
@@ -884,6 +923,7 @@
                     <a
                       href="mailto:wellder@wellder.cz"
                       class="contact__card-socials text--underline text--white"
+                      aria-label="Napsat na wellder@wellder.cz"
                       >wellder@wellder.cz</a
                     >
                   </div>
@@ -979,7 +1019,7 @@
             </form>
           </div>
         </section>
-        <section class="page__section location">
+        <section class="page__section location" aria-label="Sídlo firmy">
           <h2
             class="text--medium text--orange section__subheading visually-hidden"
           >
@@ -1019,7 +1059,7 @@
       </div>
     </main>
     <div class="background--footer">
-      <footer class="page__footer page__section">
+      <footer class="page__footer page__section" aria-label="Patička">
         <div class="footer__brand">
           <a href="#header" class="footer__logo">
             <picture>
@@ -1134,12 +1174,16 @@
             <div class="footer__contact-social">
               <p class="article__heading text--medium">Kontakty</p>
               <div class="footer__text-container">
-                <a class="text--orange text--underline" href="tel:+420731655495"
+                <a
+                  class="text--orange text--underline"
+                  href="tel:+420731655495"
+                  aria-label="Zavolat na +420 731 655 495"
                   >+420 731 655 495</a
                 >
                 <a
                   class="text--orange text--underline"
                   href="mailto:wellder@wellder.cz"
+                  aria-label="Napsat na wellder@wellder.cz"
                   >wellder@wellder.cz</a
                 >
               </div>
@@ -1150,7 +1194,10 @@
           Copyright © 2025 All Rights Reserved Kovovýroba WELLDER s.r.o.
         </p>
       </footer>
-      <footer class="page__footer--desktop page__section">
+      <footer
+        class="page__footer--desktop page__section"
+        aria-label="Patička desktop"
+      >
         <div class="footer__left">
           <div class="footer__brand">
             <a href="#header" class="footer__logo">
@@ -1185,19 +1232,28 @@
             <div class="footer__text-container">
               <div class="footer__contact-line">
                 <p>Technolog:</p>
-                <a class="text--orange text--underline" href="tel:+420731655495"
+                <a
+                  class="text--orange text--underline"
+                  href="tel:+420731655495"
+                  aria-label="Zavolat technologovi na +420 731 655 495"
                   >+420 731 655 495</a
                 >
               </div>
               <div class="footer__contact-line">
                 <p>Administrativa:</p>
-                <a class="text--orange text--underline" href="tel:+420604677179"
+                <a
+                  class="text--orange text--underline"
+                  href="tel:+420604677179"
+                  aria-label="Zavolat administrativě na +420 604 677 179"
                   >+420 604 677 179</a
                 >
               </div>
               <div class="footer__contact-line">
                 <p>Jednatel:</p>
-                <a class="text--orange text--underline" href="tel:+420608984496"
+                <a
+                  class="text--orange text--underline"
+                  href="tel:+420608984496"
+                  aria-label="Zavolat jednateli na +420 608 984 496"
                   >+420 608 984 496</a
                 >
               </div>
@@ -1206,6 +1262,7 @@
                 <a
                   class="text--orange text--underline"
                   href="mailto:wellder@wellder.cz"
+                  aria-label="Napsat na wellder@wellder.cz"
                   >wellder@wellder.cz</a
                 >
               </div>
