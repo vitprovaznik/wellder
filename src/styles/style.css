@@ -696,3 +696,12 @@ footer .article__heading {
     top: 4rem;
   }
 }
+
+/* 404 */
+.page__404{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-normal, 1rem);
+}
