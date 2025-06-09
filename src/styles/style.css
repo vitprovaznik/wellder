@@ -60,7 +60,8 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background-color: #343434;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   width: 3.5rem;
   height: 6.625rem;
   border-radius: 88px;
