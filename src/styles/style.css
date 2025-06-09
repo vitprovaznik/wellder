@@ -304,13 +304,8 @@
 .background--technologies {
   background: none;
   background-color: #3a3939;
-  /* margin-top: calc(-30px - 20vw); */
   margin-top: -13rem;
   padding-top: 8rem;
-}
-.technologies {
-  /* padding-top: calc(30px + 20vw);
-  padding-top: 12rem; */
 }
 
 .technologies__card-wrapper {
