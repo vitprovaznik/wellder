@@ -1,16 +1,13 @@
+import { defineConfig } from "vite";
 import vituum from "vituum";
 
-export default {
-  base: "/wellder/",
+export default defineConfig({
   plugins: [
     vituum({
       pages: {
-        normalizeBasePath: true,
-        base: "/wellder/",
-      },
-      imports: {
-        paths: ["./src/styles//**", "./src/scripts//**"],
+        dir: "src/pages",
+        base: "",
       },
     }),
   ],
-};
+});
